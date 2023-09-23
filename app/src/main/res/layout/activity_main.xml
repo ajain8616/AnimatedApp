@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bearDance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:lottie_autoPlay="false"
+        app:lottie_speed="2"
+        app:lottie_fileName="bear.json"
+        android:visibility="gone" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/studyPlan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="study.json"
+        app:lottie_speed="2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/shapesDance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="shapes.json"
+        app:lottie_speed="2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="game.json"
+        app:lottie_speed="2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/scaleAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="scale_animation.json"
+        app:lottie_speed="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/changeAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_animation" />
+
+    </LinearLayout>
+
+</LinearLayout>
